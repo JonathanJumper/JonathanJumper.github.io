@@ -79,3 +79,50 @@ window.onload = function() {
 		css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
 		document.body.appendChild(css);
 };
+
+
+//
+
+$(function (){
+
+  // Cache vars
+  var $gallery = $('.gallery'),
+      $lightbox = $('.lightbox'),
+      $figure = $('figure'),
+      $close = $('.close');
+
+  // Dribbble API shizzz
+  var token = 'b5501bcf1ef8eca0ef89aa3982ca742556d65b1832e077019397bbe0960df317';
+  var url = 'https://api.dribbble.com/v1/shots?sort=recent&access_token=' + token;
+
+  // Grab Dribbble popular
+  $(function(data) {
+
+    // Handle item click
+    $('.item').on('click', function() {
+      var full = $(this).attr('data-full');
+      toggleLightbox(full);
+      console.log(full);
+    });
+
+    // Toggle lightbox
+    function toggleLightbox(url) {
+      if ($lightbox.is('.open')) {
+        $lightbox
+          .removeClass('open')
+          .fadeOut(200);
+      }
+			else {
+        $figure.css('background-image', 'url(' + url + ')');
+        $lightbox
+          .addClass('open')
+          .fadeIn(200);
+      }
+    }
+
+    // Close
+    $lightbox.on('click', toggleLightbox);
+		
+	});
+
+});

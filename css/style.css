@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
+/* < < < - - - - - - - - - - content  */
 *, *:before, *:after{
   margin: 0;
   padding: 0;
@@ -13,6 +14,50 @@
 
 }
 
+body {
+  max-width: 100%;
+  background: #161B1E;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+	padding: 0 15px;
+	text-align: justify;
+}
+
+h1 {
+  color: #162731;
+  font-size: 3.3em;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 3px #ddd, 0 0 6px #777;
+}
+
+a, u {
+	text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.wrapper{
+  z-index: 1;
+  position: relative;
+  padding: 0 10%;
+  background: white;
+  -webkit-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
+  -moz-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
+  box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
+}
+
+@-webkit-keyframes moveDown {
+	0% { -webkit-transform: translateY(-40px) }
+}
+/* / / / / / / / / / / / / / / content - - - - - - - - - - > > > */
+
 /* < < < - - - - - - - - - - graph animation */
 
 .large-header {
@@ -23,7 +68,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center center;
-  background-image: url("http://i.imgur.com/yQrBTJm.jpg"); http://i.imgsafe.org/8586dee.jpg
+  background-image: url("http://i.imgur.com/yQrBTJm.jpg");
   -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.6);
   -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.6);
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.6);
@@ -51,23 +96,25 @@
 .large-header img {
   position: absolute;
   text-align: center;
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
-  top: 87%;
+  opacity: 0.4;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  top: 92%;
   left: 50%;
 }
 
 .large-header img.top {
-  margin-top: -70px;
+  margin-top: -50px;
 }
 
 .large-header a img:hover {
   position: absolute;
   text-align: center;
-  width: 64px;
-  height: 64px;
-  margin-left: -32px;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
 }
 
 
@@ -117,43 +164,6 @@ nav ul a {
 }
 /* / / / / / / / / / / / / / / nav header - - - - - - - - - - > > > */
 
-/* < < < - - - - - - - - - - content  */
-body {
-  max-width: 100%;
-  background: #161B1E;
-  -webkit-font-smoothing: antialiased;
-}
-
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-	padding: 0 20px;
-	text-align: justify;
-}
-
-a, u {
-	text-decoration: none;
-}
-
-a:hover {
-    color: white;
-}
-
-.wrapper{
-  z-index: 1;
-  position: relative;
-  padding: 20px;
-  background: #fff;
-  -webkit-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
-  -moz-box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
-  box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.68);
-}
-
-@-webkit-keyframes moveDown {
-	0% { -webkit-transform: translateY(-40px) }
-}
-/* / / / / / / / / / / / / / / content - - - - - - - - - - > > > */
-
 /* < < < - - - - - - - - - - Timeline */
 
 #timeline .timeline-item:after, #timeline .timeline-item:before {
@@ -163,19 +173,22 @@ a:hover {
   clear: both;
 }
 #timeline {
-  width: 90%;
-  margin: 30px auto;
+  width: 95%;
   position: relative;
   padding: 0 10px;
 }
 #timeline:before {
+  position: absolute;
   content: "";
-  width: 3px;
+  width: 4px;
   height: 100%;
   background: #162731;
   left: 50%;
+  margin-left: -2px;
   top: 0;
-  position: absolute;
+  -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.1);
 }
 #timeline:after {
   content: "";
@@ -209,7 +222,7 @@ a:hover {
 #timeline .timeline-item .timeline-icon .fa {
   position: relative;
   top: 18px;
-  left: 20px;
+  left: 19px;
 }
 
 #timeline .timeline-item .timeline-content {
@@ -238,7 +251,7 @@ a:hover {
 }
 
 #timeline .timeline-item .timeline-content h3 {
-  padding: 0px 15px 5px 20px;
+  padding: 0px 15px 5px 15px;
   font-weight: 600;
   color: #162731
 }
@@ -256,7 +269,7 @@ a:hover {
   content: '';
   position: absolute;
   left: 45%;
-  top: 20px;
+  top: 15px;
   width: 0;
   height: 0;
   border-top: 7px solid transparent;
@@ -276,6 +289,77 @@ a:hover {
 
 /* / / / / / / / / / / / / / / timeline - - - - - - - - - - > > >
 
+/* < < < - - - - - - - - - - gallery */
+
+.gallery {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gallery:hover > li {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.gallery li {
+  position: relative;
+  float: left;
+  margin: 15px 15px 15px 15px;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+}
+.gallery li img {
+  width: 250px;
+  height: 200px;
+  backface-visibility: hidden;
+  transition: all .2s ease-in-out;
+}
+.gallery li img:hover {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.gallery li:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+}
+.gallery li:hover > li {
+  box-shadow: 1px 1px 1px 5px #0093d0;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 75px;
+  text-align: center;
+  display: none;
+  cursor: -webkit-zoom-out;
+  cursor: -moz-zoom-out;
+}
+
+.lightbox figure {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  white-space: no-wrap;
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+
+/* / / / / / / / / / / / / / / gallery - - - - - - - - - - > > >
 
 /* < < < - - - - - - - - - - footer */
 #footer {
@@ -286,10 +370,10 @@ a:hover {
   font-size: 12px;
 }
 
-#footer h1 {
+#footer .quote {
   position: fixed;
   left: 50%;
-  bottom: 120px;
+  bottom: 135px;
   margin-left: -450px;
   width: 900px;
   list-style: outside none none;
@@ -301,7 +385,7 @@ a:hover {
   font-size: 3.1em;
 }
 
-#footer h1 b{
+#footer .quote b{
 	font-weight: bold;
   color: #747d83;
 	font-size: 1.2em;
@@ -343,17 +427,17 @@ a:hover {
 
 #footer .bottom .center img {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  margin-left: -25px;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
   bottom: 30px;
   left: 50%;
 }
 
 #footer .bottom .center img:hover {
-  width: 64px;
-  height: 64px;
-  margin-left: -32px;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
 }
 
 /* / / / / / / / / / / / / / / footer - - - - - - - - - - > > > */
