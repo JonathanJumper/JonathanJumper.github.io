@@ -7,21 +7,22 @@ $(window).scroll(function(){
 	}
 });
 
-$('nav a').click(function(event) {
+$('a').click(function(event) {
 	var id = $(this).attr("href");
 	var offset = 80;
 	var target = $(id).offset().top - offset;
 	$('html, body').animate({
-		scrollTop: target });
+		scrollTop: target }, 700);
 });
+
 
 $('scrolldown').click(function(event) {
 	var target = $(about).offset().top - offset;
 	$('html, body').animate({
 		scrollTop: target });
 });
-/* typewriter animation */
 
+/* typewriter animation */
 var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;

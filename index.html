@@ -1,75 +1,156 @@
 <!DOCTYPE html>
 <html >
-<head>
-  <meta charset="UTF-8">
-  <title>Jonathan Martínez</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jonathan Martínez</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <header>
+    <header>
 
-    <div id="home" class="container demo">
-      <div class="content">
+      <div id="home" class="content">
         <div id="large-header" class="large-header">
            <canvas id="demo-canvas"></canvas>
-           <h1 class="main-title"><span class="thin">Jonathan</span> Martínez, <span class="thin"> <a class="typewrite" data-period="2000" data-type='[ "Developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'></a> </span></h1>
+           <div class="main-title">
+             <span class="thin">Jonathan</span> Martínez, <span class="thin"> <a class="typewrite" data-period="2000" data-type='[ "Developer.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'></a> </span>
+           </div>
+           <a href="#about"><img src="images/icons/down.svg" class="top"></a>
+           <a href="#footer"><img src="images/icons/ddown.svg"></a>
         </div>
       </div>
+
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
+      <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Education</a></li>
+          <li><a href="#courses">Experience</a></li>
+          <li><a href="#materials">About</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Main -->
+    <div class="wrapper">
+      <h1 id="about">About</h1>
+      <p>Creative and UX passionate developer in my fifth year of Systems and Computers Engineering . I like mobile development, making use of best practices, version control systems, documentation, agile methodologies, design patterns and trends.</p>
+
+      <h1 id="courses">Courses</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
+
+  		<div id="timeline">
+  			<div class="timeline-item">
+  				<div class="timeline-icon">
+            <span class="fa fa-android"style="font-size:25px;color:#fff;"></span>
+  				</div>
+  				<div class="timeline-content">
+  					<h2>FREELANCE ANDROID DEVELOPER</h2>
+            <h3>2017 - Present</h3>
+  					<p>
+              Android development, making use of best practices, version control systems, documentation, agile methodologies, design patterns and trends.
+  					</p>
+  				</div>
+  			</div>
+
+  			<div class="timeline-item">
+  				<div class="timeline-icon">
+            <span class="fa fa-stack-overflow"style="font-size:25px;color:#fff;"></span>
+  				</div>
+  				<div class="timeline-content right">
+  					<h2>SOFTWARE DEVELOPER</h2>
+            <h3>2016</h3>
+            <h3><a href="http://domoti.rocks/" target="_blank">Domoti, Bogotá, Colombia</a></h3>
+  					<p>
+  						Cross platforms Apps in QT framework.<br>
+              RESTFul APIs in Google  App Engine.<br>
+              Software Architecture on SQL and NoSQL Databases.
+  					</p>
+  				</div>
+  			</div>
+
+  			<div class="timeline-item">
+  				<div class="timeline-icon">
+            <span class="fa fa-university"style="font-size:21px;color:#fff;"></span>
+  				</div>
+  				<div class="timeline-content">
+  					<h2>COMPUTER AND SYSTEMS ENGINEERING</h2>
+            <h3>2012 - Present</h3>
+            <h3><a href="http://unal.edu.co/" target="_blank">Universidad Nacional, Bogotá, Colombia</a></h3>
+  					<p>
+              The program gives the student a strong background in maths, networking and computer science, in order to analize and solve the problems of the industry.
+            </p>
+  				</div>
+  			</div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="fa fa-language"style="font-size:23px;color:#fff;"></span>
+          </div>
+          <div class="timeline-content right">
+            <h2>ENGLISH PROFICIENCY CEFR C1</h2>
+            <h3>2011</h3>
+            <h3><a href="https://www.anglo-continental.com/" target="_blank">Anglo Continental, Bournemouth, England</a></h3>
+            <p>
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="fa fa-book"style="font-size:23px;color:#fff;"></span>
+          </div>
+          <div class="timeline-content">
+            <h2>HIGH SCHOOL DIPLOMA</h2>
+            <h3>2010</h3>
+            <h3><a href="https://www.anglo-continental.com/" target="_blank">Colegio Juan Pablo II, Villavicencio, Colombia</a></h3>
+            <p>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <h1 id="materials">Materials</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
+      <h1 id="contact">Contact</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>º
     </div>
 
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js'></script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js'></script>
+    <!-- Footer -->
+    <div id="footer">
 
-    <nav>
-      <ul>
-        <li><a class="fa fa-chevron-up" href="#home"></a></li>
-        <li><a href="#about">Experiencia</a></li>
-        <li><a href="#courses">Acerca</a></li>
-        <li><a href="#materials">Mapa</a></li>
-      </ul>
-    </nav>
+      <h1>" What separates <b>design</b> from <b>art</b> is that design is meant to be.. <b>functional "</b> </h1>
 
-  </header>
+      <div class="bottom">
+        <div class="left">
+          <a class="fa fa-facebook-official" href="https://www.facebook.com/JumperO2" style="font-size:18px;color:#747d83;" target="_blank"></a>
+          <span style="display:inline-block; width: 2px;"></span>
+          <a class="fa fa-github-alt" href="https://github.com/JonathanJumper" style="font-size:20px;color:#747d83;" target="_blank"></a>
+          <span style="display:inline-block; width: 2px;"></span>
+          Jonathan Jumper
+        </div>
+        <div class="center">
+          <a href="#home"><img src="images/icons/uup.svg"></a>
+        </div>
+        <div class="right">
+          <a href="https://github.com/JonathanJumper">Mapa del sitio</a>
+        </div>
+      </div>
 
-  <!-- mainContent -->
-  <div class="wrapper">
-    <h1 id="about">About</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
+    </div>
 
-    <h1 id="courses">Courses</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
 
-    <h1 id="materials">Materials</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    <h1 id="contact">Contact</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius!Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>º
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <h1><b>"</b> What separates <b>design</b> from <b>art</b> is that design is meant to be… <b>functional "</b> </h1>
-    <h2>
-      <a class="fa fa-facebook-official" href="https://www.google.com.co/" style="font-size:18px;color:#747d83;"></a>
-      <span style="display:inline-block; width: 2px;"></span>
-      <a class="fa fa-github-alt" href="#home" style="font-size:20px;color:#747d83;"></a>
-      <span style="display:inline-block; width: 2px;"></span>
-      Jonathan Jumper
-    </h2>
-    <h3>
-      Mapa del sitio
-    </h3>
-  </footer>
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="js/index.js"></script>
-
-</body>
-
+  </body>
 </html>
