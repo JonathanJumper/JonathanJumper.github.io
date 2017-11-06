@@ -16,7 +16,7 @@
 
 body {
   max-width: 100%;
-  background: #161B1E;
+  background: #1b2429;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -76,6 +76,7 @@ a:hover {
 
 .main-title {
   position: absolute;
+  width: 90%;
   margin: 0;
   padding: 0;
   color: #F9F1E9;
@@ -296,6 +297,7 @@ nav ul a {
   *zoom: 1;
   margin: 0 auto;
   overflow: hidden;
+  padding-bottom: 70px;
 }
 .gallery:hover > li {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
@@ -365,7 +367,7 @@ nav ul a {
 #footer {
   z-index: 0;
   position: relative;
-  height: 270px;
+  height: 250px;
   background: none repeat scroll 0% 0% #1b2429;
   font-size: 12px;
 }
@@ -373,8 +375,8 @@ nav ul a {
 #footer .quote {
   position: fixed;
   left: 50%;
-  bottom: 135px;
-  margin-left: -450px;
+  bottom: 120px;
+  margin-left: -420px;
   width: 900px;
   list-style: outside none none;
   text-align: center;
@@ -402,7 +404,7 @@ nav ul a {
 #footer .bottom .left{
   position: fixed;
   bottom: 30px;
-  left: 8%;
+  left: 12%;
 }
 
 #footer .bottom .right {
@@ -426,19 +428,15 @@ nav ul a {
 }
 
 #footer .bottom .center img {
+  filter: grayscale(100%);
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 26px;
   margin-left: -15px;
   bottom: 30px;
   left: 50%;
 }
 
-#footer .bottom .center img:hover {
-  width: 40px;
-  height: 40px;
-  margin-left: -20px;
-}
 
 /* / / / / / / / / / / / / / / footer - - - - - - - - - - > > > */
 
