@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 /* < < < - - - - - - - - - - content  */
 *, *:before, *:after{
@@ -29,10 +30,12 @@ p {
 
 h1 {
   color: #162731;
+  font-family: 'Lobster', Helvetica, sans-serif;
+  margin-right: 45px;
   font-size: 3.3em;
   font-weight: 700;
   text-align: center;
-  text-shadow: 1px 1px 3px #ddd, 0 0 6px #777;
+  text-shadow: 1px 1px 2px #ddd, 0 0 6px #777;
 }
 
 a, u {
@@ -346,11 +349,16 @@ nav ul a {
   cursor: -moz-zoom-out;
 }
 
+figure {
+  margin: 0;
+}
+
 .lightbox figure {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
+  margin-top: 1em;
   white-space: no-wrap;
   background-repeat: no-repeat;
   background-position: center;
