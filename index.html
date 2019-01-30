@@ -2,12 +2,15 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Chingaté</title>
+    <title>Jonathan M. Chingaté</title>
     <link rel="icon" href="images/chingate.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
   </head>
 
@@ -20,55 +23,227 @@
         <div id="large-header" class="large-header">
            <canvas id="demo-canvas"></canvas>
            <div class="main-title">
-           <span class="thin">Jonathan M. <span class="signature">Chingaté, </span></span><a class="typewrite" data-period="2000" data-type='[ "Developer.", "I Deliver Quality.", " Ultimate Frisbee player.", "I Love Design.", "Made with ♥.", "I Like Pizza." ]'></a>
+            <span class="thin">Jonathan M. <span class="signature">Chingaté, </span></span><a class="typewrite" data-period="2000" data-type='[ "Developer.", "improving JS recently.", " Ultimate Frisbee player.", "I Love Design.", "Made with care.", "I Like Pizza." ]'></a>
            </div>
-           <a href="#about"><img src="images/icons/down.svg" class="top"></a>
-           <a href="#footer"><img src="images/icons/ddown.svg"></a>
+           <a href="#about" class="linky"><img src="images/icons/swipe-down.png"></a>
         </div>
       </div>
-
       <script type='text/javascript' src='js/TweenLite.min.js'></script>
       <script type='text/javascript' src='js/EasePack.js'></script>
       <script type='text/javascript' src='js/demo.js'></script>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/index.js"></script>
 
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#timeline-header">Timeline</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#home" class="linky">Home</a></li>
+          <li><a href="#about" class="linky">About</a></li>
+          <li><a href="#timeline-header" class="linky">Timeline</a></li>
+          <li><a href="#gallery" class="linky">Gallery</a></li>
         </ul>
       </nav>
 
     </header>
 
-    <!-- Content -->
     <div class="wrapper">
 
+      <!-- About -->
+      <br>
       <br>
       <h1 id="about">About</h1>
       <p>
-        Effective developer with more than 4 years of hands-on experience, graduated from National University of Colombia.
-        <br/>
-        <br/>
-        I like FullStack and Mobile development making use of best practices, version control systems, documentation, agile methodologies, design patterns and trends with a strong focus on UI/UX.
+        Effective developer graduated of Computers and Systems Engineering from National University, Colombia and more than 4 years of hands-on experience in software development.
       </p>
+      <br/>
+      <p>
+        I like Fullstack and Mobile development making use of best practices, version control systems, documentation, agile methodologies, design and architectural patterns and trends with a strong focus on UI/UX.
+      </p>
+
+      <!-- Timeline -->
+      <br>
+      <br>
+      <h1 id="timeline-header">Timeline</h1>
+      <br>
+      <div id="timeline">
+      
+        <div class="timeline-item">
+
+          <div class="timeline-icon">
+            <img src="images/icons/react.png">  
+          </div>
+
+          <div class="timeline-addon-container">
+            <div class="timeline-addon">
+              <img src="images/icons/redux.png">
+            </div>
+            <div class="timeline-addon">
+              <img src="images/icons/ruby.png">
+            </div>
+            <div class="timeline-addon">
+              <img src="images/icons/aws.png">
+            </div>
+          </div>
+
+          <div class="timeline-content left">
+            <h2>Fullstack Developer</h2>
+            <h3>
+              Aug 2018 - Present
+            </h3>
+            <h3>
+              <a href="http://geekcore.co/" target="_blank">GeekCore, Bogotá, Colombia</a>
+            </h3>
+            <p>
+               • Completely designed and developed the web app for the P2P Startup with a <b>React</b> front end that consumes web services from the
+              <b>Rails</b> API backend.
+              <br/>
+              REST, PostgreSQL, token auth, redux, webpack, Material design, AWS.
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <img src="images/icons/react.png">
+          </div>
+
+          <div class="timeline-addon-container" style="margin-left:-110px;">
+            <div class="timeline-addon">
+              <img src="images/icons/redux.png">
+            </div>
+          </div>
+
+          <div class="timeline-content right">
+            <h2>FRONT END DEVELOPER</h2>
+            <h3>Feb 2018 - Aug 2018</h3>
+            <h3>
+              <a href="http://geekcore.co/" target="_blank">GeekCore, Bogotá, Colombia</a>
+            </h3>
+            <p>
+               • Develop the front end for a Real Estate project in <b>React JS</b>. 
+              <br/>
+               Redux, HOCs, router, thunks, webpack, gps, API requests, Ant Design.
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <img src="images/icons/ruby.png">
+          </div>
+
+          <div class="timeline-addon-container">
+            <div class="timeline-addon">
+              <img src="images/icons/js.png">
+            </div>
+            <div class="timeline-addon">
+              <img src="images/icons/java.png">
+            </div>
+            <div class="timeline-addon">
+              <img src="images/icons/android.png">
+            </div>
+          </div>
+
+          <div class="timeline-content">
+            <h2>FREELANCE DEVELOPER</h2>
+            <h3>
+              2017 - 2018
+            </h3>
+            <h3>
+              <a href="http://unal.edu.co/" target="_blank">National University, Bogotá, Colombia</a>
+            </h3>
+            <p>
+              • <b>Fullstack</b> development on <b>Rails</b> framework, project of National Ministry of Environment to monitor and reduce CO2 emisions.
+              <br/>
+              • <b>Android</b> Native development in <b>Java</b>.
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+
+          <div class="timeline-icon">
+            <img src="images/icons/java.png">
+          </div>
+
+          <div class="timeline-addon-container" style="margin-left:-110px;">
+            <div class="timeline-addon">
+              <img src="images/icons/js.png">
+            </div>
+          </div>
+
+          <div class="timeline-content right">
+            <h2>SOFTWARE DEVELOPER</h2>
+            <h3>2016</h3>
+            <h3>
+              <a href="http://domoti.rocks/" target="_blank">Domoti, Bogotá, Colombia</a>
+            </h3>
+            <p>
+               • <b>Backend</b> development in <b>Java</b> and Google App Engine, NoSQL.
+               <br/>
+               • Cross platform mobile app in QT Framework, <b>JavaScript</b>.
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <img src="images/icons/un.png">
+          </div>
+          <div class="timeline-content">
+            <h2>COMPUTER AND SYSTEMS ENGINEERING</h2>
+            <h3>2012 - 2018</h3>
+            <h3>
+              <a href="http://unal.edu.co/" target="_blank">National University, Bogotá, Colombia</a>
+            </h3>
+            <p>
+              The program gives the student a strong background in maths, networking and computer science, in order to analize and solve
+              the problems of the industry.
+            </p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <img src="images/icons/england.png">
+          </div>
+          <div class="timeline-content right">
+            <h2>ENGLISH PROFICIENCY CEFR C1</h2>
+            <h3>2011</h3>
+            <h3>
+              <a href="https://www.anglo-continental.com/" target="_blank">Anglo Continental, Bournemouth, England</a>
+            </h3>
+            <p>Intensive english course.</p>
+          </div>
+        </div>
+      
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <img src="images/icons/diploma.png">
+          </div>
+          <div class="timeline-content">
+            <h2>HIGH SCHOOL DIPLOMA</h2>
+            <h3>2010</h3>
+            <h3>
+              <a href="http://colegiojuanpabloii.edu.co/" target="_blank">Colegio Juan Pablo II, Villavicencio, Colombia</a>
+            </h3>
+            <p> Finished high school in <b>4th</b> national place in ICFES tests (SAT alike) which granted me a government scholarship to study abroad.</p>
+          </div>
+        </div>
+      
+      </div>
+
 
       <!-- Gallery -->
       <br>
       <br>
       <h1 id="gallery">Some of my Work</h1>
       <ul class="gallery">
+        <li class="item" data-full="images/gallery/gournet_desktop.jpg">
+          <img src="images/gallery/gournet_desktop.jpg" />
+        </li>
         <li class="item" data-full="images/gallery/cinemapp.png">
           <img src="images/gallery/cinemapp_small.png" />
         </li>
         <li class="item" data-full="images/gallery/forms.png">
           <img src="images/gallery/forms.png" />
-        </li>
-        <li class="item" data-full="images/gallery/gournet_desktop.jpg">
-          <img src="images/gallery/gournet_desktop.jpg" />
         </li>
         <li class="item" data-full="images/gallery/grunental.png">
           <img src="images/gallery/grunental_small.png" />
@@ -88,98 +263,6 @@
       
       </ul>
 
-      <!-- Timeline -->
-      <h1 id="timeline-header">Timeline</h1>
-      <br>
-  		<div id="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <span class="fa fa-laptop" style="font-size:25px;color:#fff;"></span>
-          </div>
-          <div class="timeline-content right">
-            <h2>FRONTEND DEVELOPER</h2>
-            <h3>2018 - Present</h3>
-            <h3> <a href="http://geekcore.co/" target="_blank">GeekCore, Bogotá, Colombia</a> </h3>
-            <p>
-              React JS, GraphQL, Yarn, Webpack, ES6 
-              <br/>
-              Redux, Thunk, Saga, HOCs, Router, Local Storage
-            </p>
-          </div>
-        </div>
-
-  			<div class="timeline-item">
-  				<div class="timeline-icon">
-            <span class="fa fa-android"style="font-size:25px;color:#fff;"></span>
-  				</div>
-  				<div class="timeline-content">
-  					<h2>FULLSTACK DEVELOPER</h2>
-            <h3>2017 - 2018</h3>
-  					<p>
-               Freelance development on Ruby on Rails, React JS, React Native, Android Native 
-               <br/>
-               RestFul APIs, Microservices, CSS, HTML, XML, JSX, Material Design
-            </p>
-  				</div>
-  			</div>
-
-  			<div class="timeline-item">
-  				<div class="timeline-icon">
-            <span class="fa fa-stack-overflow"style="font-size:25px;color:#fff;"></span>
-  				</div>
-  				<div class="timeline-content right">
-  					<h2>SOFTWARE DEVELOPER</h2>
-            <h3>2016</h3>
-            <h3><a href="http://domoti.rocks/" target="_blank">Domoti, Bogotá, Colombia</a></h3>
-  					<p>
-  						Cross platforms Apps in QT framework.<br>
-              RESTFul APIs in Google  App Engine.<br>
-              Software Architecture on SQL and NoSQL Databases.
-  					</p>
-  				</div>
-  			</div>
-
-  			<div class="timeline-item">
-  				<div class="timeline-icon">
-            <span class="fa fa-university"style="font-size:21px;color:#fff;"></span>
-  				</div>
-  				<div class="timeline-content">
-  					<h2>COMPUTER AND SYSTEMS ENGINEERING</h2>
-            <h3>2012 - Present</h3>
-            <h3><a href="http://unal.edu.co/" target="_blank">Universidad Nacional, Bogotá, Colombia</a></h3>
-  					<p>
-              The program gives the student a strong background in maths, networking and computer science, in order to analize and solve the problems of the industry.
-            </p>
-  				</div>
-  			</div>
-
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <span class="fa fa-language"style="font-size:23px;color:#fff;"></span>
-          </div>
-          <div class="timeline-content right">
-            <h2>ENGLISH PROFICIENCY CEFR C1</h2>
-            <h3>2011</h3>
-            <h3><a href="https://www.anglo-continental.com/" target="_blank">Anglo Continental, Bournemouth, England</a></h3>
-            <p>Intensive english course.</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-icon">
-            <span class="fa fa-book"style="font-size:23px;color:#fff;"></span>
-          </div>
-          <div class="timeline-content">
-            <h2>HIGH SCHOOL DIPLOMA</h2>
-            <h3>2010</h3>
-            <h3><a href="https://www.anglo-continental.com/" target="_blank">Colegio Juan Pablo II, Villavicencio, Colombia</a></h3>
-            <p> Finished high school with a 4th place in national ICFES tests which granted me a scholarship to study abroad.</p>
-          </div>
-        </div>
-
-      </div>
-
       <!-- Lightbox -->
       <div class="lightbox" >
         <figure></figure>
@@ -196,11 +279,11 @@
 
       <div class="bottom">
         <div class="left">
-          <a class="fa fa-facebook-official" href="https://www.facebook.com/Jo2Ch" style="font-size:18px;color:#747d83;" target="_blank"></a>
-          <span style="display:inline-block; width: 2px;"></span>
           <a class="fa fa-github-alt" href="https://github.com/JonathanJumper" style="font-size:20px;color:#747d83;" target="_blank"></a>
           <span style="display:inline-block; width: 2px;"></span>
           <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/chingate/" style="font-size:20px;color:#747d83;" target="_blank"></a>
+          <span style="display:inline-block; width: 2px;"></span>
+          <a class="fa fa-facebook-official" href="https://www.facebook.com/Jo2Ch" style="font-size:18px;color:#747d83;" target="_blank"></a>
           <span style="display:inline-block; width: 2px;"></span>
         </div>
         <div class="center">

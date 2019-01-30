@@ -7,20 +7,17 @@ $(window).scroll(function(){
 	}
 });
 
-$('a').click(function(event) {
-	var id = $(this).attr("href");
-	var offset = 80;
-	var target = $(id).offset().top - offset;
-	$('html, body').animate({
-		scrollTop: target }, 700);
+$(document).ready(function () {
+  console.log("rerii")
+  $(".linky").click(function (event) {
+    console.log("huehuheu")
+    var id = $(this).attr("href");
+    var offset = 75;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({ scrollTop: target }, 700);
+  });
 });
 
-
-$('scrolldown').click(function(event) {
-	var target = $(about).offset().top - offset;
-	$('html, body').animate({
-		scrollTop: target });
-});
 
 /* typewriter animation */
 var TxtType = function(el, toRotate, period) {

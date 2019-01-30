@@ -95,26 +95,18 @@ a:hover {
   font-weight: 200;
 }
 
-
 .signature {
   font-weight: 800;
 }
 
-
-
 .large-header img {
   position: absolute;
   text-align: center;
-  opacity: 0.4;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   margin-left: -15px;
   top: 92%;
   left: 50%;
-}
-
-.large-header img.top {
-  margin-top: -50px;
 }
 
 .large-header a img:hover {
@@ -228,10 +220,43 @@ nav ul a {
   box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.3);
 }
 
-#timeline .timeline-item .timeline-icon .fa {
+#timeline .timeline-item .timeline-icon img {
   position: relative;
-  top: 18px;
-  left: 19px;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  left: 15px;
+}
+
+.timeline-addon-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 30px;
+  display: flex;
+  position: absolute;
+}
+
+.timeline-addon {
+  background: #162731;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.3);
+}
+
+.timeline-addon  img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  left: 15px;
 }
 
 #timeline .timeline-item .timeline-content {
@@ -389,8 +414,8 @@ figure {
   position: fixed;
   left: 50%;
   bottom: 120px;
-  margin-left: -420px;
-  width: 900px;
+  margin-left: -37%;
+  width: 74%;
   list-style: outside none none;
   text-align: center;
 
@@ -455,8 +480,9 @@ figure {
 
 
 @media only screen and (max-width: 768px) {
-   .demo .main-title {
-      font-size: 3em;
+
+   .main-title {
+      font-size: 1.9em;
    }
 
    #timeline {
@@ -480,4 +506,13 @@ figure {
    #timeline .timeline-item .timeline-icon {
      left: 0;
    }
+
+   .timeline-addon-container {
+     display: none;
+   }
+
+   #footer .quote {
+    font-size: 1.3em;
+  }
+
 }
